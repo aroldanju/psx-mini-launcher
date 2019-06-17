@@ -17,13 +17,14 @@ static const int RC_MAX_BUFFER_SIZE	= 512;
 
 class Connection {
 public:
-    Connection();
+	static Connection& getInstance();
     virtual ~Connection();
     void close();
     bool connect();
     void send(const char *buffer, uint32_t length);
 
 private:
+    Connection();
     struct sockaddr_in address;
     int socket;
 };

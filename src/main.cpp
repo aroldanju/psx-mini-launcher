@@ -4,7 +4,7 @@
 int main() {
     std::cout << "psx-mini-launcher" << std::endl;
 
-    Connection connection;
+    Connection& connection = Connection::getInstance();
 
     const char save[2] = { 0x00, 0x00 };
 

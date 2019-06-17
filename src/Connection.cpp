@@ -15,6 +15,11 @@ Connection::~Connection() {
     close();
 }
 
+Connection& Connection::getInstance() {
+	static Connection instance;
+	return instance;
+}
+
 void Connection::close()    {
     if(socket > 0) {
         ::close(socket);
