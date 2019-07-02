@@ -32,6 +32,9 @@ int main() {
             if (event.type == SDL_QUIT) {
                 quit = true;
             }
+            else if (event.type == SDL_KEYDOWN) {
+                launcher.runGame();
+            }
         }
 
         SDL_RenderClear(renderer);
@@ -88,7 +91,7 @@ bool init(SDL_Renderer** renderer, SDL_Window** window) {
     }
 
     SDL_RenderSetLogicalSize(*renderer, SCREEN_WIDTH, SCREEN_HEIGHT);
-    SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "2");
+    SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
 
     return true;
 }

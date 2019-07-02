@@ -23,6 +23,10 @@ public:
 
     void render(int x, int y, SDL_Renderer* renderer);
 
+    uint32_t getWidth() const {
+        return surface != nullptr ? surface->w : 0;
+    }
+
 private:
     std::string caption;
     TTF_Font *font;

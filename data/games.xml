@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<games>
+    <game name="Crash Team Racing">
+        <released>1999</released>
+        <players>2</players>
+        <cover>../../games/ctr/cover.bmp</cover>
+        <image>../../games/ctr/CTR - Crash Team Racing.bin</image>
+    </game>
+
+    <game name="Resident Evil">
+        <released>1996</released>
+        <players>1</players>
+        <cover>../../games/re/cover.bmp</cover>
+        <image>../../games/re/Resident Evil (Europe).bin</image>
+    </game>
+
+</games>
